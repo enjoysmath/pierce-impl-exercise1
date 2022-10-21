@@ -1,6 +1,13 @@
 import std.stdio;
 
+import language;
+
 void main()
 {
-	writeln("Edit source/app.d to start your project.");
+	while (true) {
+		write("> ");
+		auto input = readln();
+		auto parseTree = NumbersAndBooleans(input);
+		writeln(parseTree);
+   }
 }
